@@ -1,28 +1,68 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <BaseHeader :links="menuLinks"/>
+    <TheJumbotron/>
+    <BaseMain/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import BaseHeader from './components/BaseHeader.vue';
+import BaseMain from './components/BaseMain.vue';
+import TheJumbotron from './components/TheJumbotron.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    BaseHeader,
+    BaseMain,
+    TheJumbotron
+},
+  data(){
+    return{
+      menuLinks: [
+        { text: "Menù", src: "#" },
+        { text: "Pages", src: "#" },
+        { text: "Courses", src: "#" },
+        { text: "Features", src: "#" },
+        { text: "Blog", src: "#" },
+        { text: "Shop", src: "#" },
+      ]
+    }
   }
 }
 </script>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    body{
+      font-family: 'Poppins', sans-serif;
+      background-color: grey;
+
+          ul li{
+      list-style-type: none;
+
+      a{
+        text-decoration: none;
+        color: black;
+      }
+    }
+
+    img{
+      max-width: 100%;
+    }
+
+    .container{
+      width: 1100px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    }
+
+
+  }
 </style>
