@@ -2,12 +2,12 @@
   <div>
     <BaseHeader :links="menuLinks"/>
     <TheJumbotron :icons="jumbotronIcons"/>
-    <BaseMain :courses="coursesList" :benefits="benefitsList"/>
+    <BaseMain :courses="coursesList" :benefits="benefitsList" :testimonials="testimonialsList"/>
   </div>
 </template>
 
 <script>
-import { menuLinks, jumbotronIcons, coursesList, benefitsList } from './assets/data/index.js';
+import { menuLinks, jumbotronIcons, coursesList, benefitsList, testimonialsList } from './assets/data/index.js';
 import BaseHeader from './components/BaseHeader.vue';
 import BaseMain from './components/BaseMain.vue';
 import TheJumbotron from './components/TheJumbotron.vue';
@@ -25,6 +25,7 @@ export default {
       jumbotronIcons,
       coursesList,
       benefitsList,
+      testimonialsList,
     }
   }
 }
