@@ -5,7 +5,7 @@
             <nav>
                 <ul>
                     <li v-for="link in links" :key="link.text">
-                        <a :href="link.src">{{link.text}}<i class="fa-solid fa-angle-down"></i></a>
+                        <a :href="link.href">{{link.text}}<i class="fa-solid fa-angle-down"></i></a>
                     </li>
                 </ul>
                 <input type="text" placeholder="Search...">
@@ -26,6 +26,7 @@
 <style lang="scss" scoped>
     header{
         background-color: white;
+        box-shadow: 0 0.2px 8px rgb(218, 218, 218);
 
         .container{
             display: flex;
@@ -46,7 +47,7 @@
 
                     a{
                         margin: 0 10px;
-                        font-size: 12px;
+                        font-size: 14px;
 
                         i{
                             margin-left: 5px;
@@ -57,20 +58,22 @@
                 input{
                     margin-left: 20px;
                     height: 30px;
-                    padding: 5px;
+                    padding: 20px 15px;
                     border: none;
                     border-radius: 5px;
-                    background-color: grey;
+                    background-color: rgb(233, 233, 233);
                     position: relative;
 
                     &::placeholder{
-                        color: black;
-                        font-size: 12px;
+                        color: grey;
+                        font-size: 14px;
+                        font-weight: 100;
                     }
 
                     &:focus-visible{
                         background-color: white;
                         border: 0.5px solid green;
+                        font-weight: 100;
                     }
                 }
             }

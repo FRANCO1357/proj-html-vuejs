@@ -1,11 +1,18 @@
 <template>
-    <h2>Miao</h2>
+    <div>
+        <TheAllCourses :courses="courses"/>
+    </div>
 </template>
 
 <script>
+import TheAllCourses from './TheAllCourses.vue';
     export default{
-        name: 'baseMain',
+    name: "baseMain",
+    components: { TheAllCourses },
+    props:{
+        courses: Array,
     }
+}
 </script>
 
 <style lang="scss" scoped>
