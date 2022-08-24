@@ -46,7 +46,7 @@
                     display: flex;
 
                     a{
-                        margin: 0 10px;
+                        margin: 0 20px;
                         font-size: 14px;
 
                         i{
