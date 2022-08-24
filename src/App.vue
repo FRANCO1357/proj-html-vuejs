@@ -7,6 +7,7 @@
 </template>
 
 <script>
+import { menuLinks, jumbotronIcons, coursesList, benefitsList } from './assets/data/index.js';
 import BaseHeader from './components/BaseHeader.vue';
 import BaseMain from './components/BaseMain.vue';
 import TheJumbotron from './components/TheJumbotron.vue';
@@ -20,35 +21,10 @@ export default {
 },
   data(){
     return{
-      menuLinks: [
-        { text: "Home", href: "#" },
-        { text: "Pages", href: "#" },
-        { text: "Courses", href: "#" },
-        { text: "Features", href: "#" },
-        { text: "Blog", href: "#" },
-        { text: "Shop", href: "#" },
-      ],
-      jumbotronIcons: [
-        { src: require("./assets/images/client-logo-01.png"), alt: "client-01" },
-        { src: require("./assets/images/client-logo-02.png"), alt: "client-02" },
-        { src: require("./assets/images/client-logo-03.png"), alt: "client-03" },
-        { src: require("./assets/images/client-logo-04.png"), alt: "client-04" },
-        { src: require("./assets/images/client-logo-05.png"), alt: "client-05" },
-        { src: require("./assets/images/client-logo-06.png"), alt: "client-06" },
-      ],
-      coursesList: [
-        { id: 1, title: 'Personal Finance: Financial Security Thinking & Principles', price: 'Free', lessons: '2', students: '201', thumb: require("./assets/images/finance-course-thumbnail-04-480x298.jpeg") },
-        { id: 2, title: 'Learning to Write as a Professional Author', price: '$40.00', lessons: '20', students: '63', thumb: require("./assets/images/course-02-480x298 (1).jpeg") },
-        { id: 3, title: 'Customer-centric Info-Tech Strategies', price: 'Free', lessons: '24', students: '885', thumb: require("./assets/images/stock-full-hd-03-480x298 (1).jpeg") },
-        { id: 4, title: 'Master jQuery in a Short Period of Time', price: '$19.00', lessons: '17', students: '63', thumb: require("./assets/images/stock-full-hd-04-480x298 (1).jpeg") },
-        { id: 5, title: 'Academic Listening and Note-taking', price: '$26.00', lessons: '14', students: '68', thumb: require("./assets/images/stock-full-hd-06-480x298 (1).jpeg") },
-        { id: 6, title: 'Master jQuery in a Short Period of Time', price: '$39.00', lessons: '6', students: '51', thumb: require("./assets/images/course-featured-image-01-480x298 (1).jpeg") },
-      ],
-      benefitsList: [
-        { title: 'Customize Preferences', description: 'Learners are given the right to arrange and customize their study schedule and timetable based on preferences.', link: 'Start here', href: '#', thumb: require("./assets/images/home-2-image-box-01.png") },
-        { title: 'Cloud Storage', description: 'You can store online lessons via online cloud or download to your device and revise lessons on the way.', link: 'Get free quote', href: '#', thumb: require("./assets/images/about-us-02-image-box-02.png") },
-        { title: 'Multimedia Channels', description: 'We provide study materials with various formats: video, audio, slides, doc, prints, books and applications.', link: 'Start now', href: '#', thumb: require("./assets/images/home-2-image-box-03.png") },
-      ],
+      menuLinks,
+      jumbotronIcons,
+      coursesList,
+      benefitsList,
     }
   }
 }
