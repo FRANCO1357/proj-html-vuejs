@@ -147,6 +147,7 @@
                         &:hover{
                             background-color: $main_color;
                             color: white;
+                            transition: 0.3s linear;
                         }
                     }
 

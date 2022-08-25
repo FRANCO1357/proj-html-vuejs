@@ -51,6 +51,7 @@ export default{
 
         &:hover{
             background-color: $button_hover;
+            transition: 0.3s linear;
         }
     }
 }

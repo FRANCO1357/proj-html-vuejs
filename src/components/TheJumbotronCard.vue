@@ -27,7 +27,7 @@ export default{
 
             &:hover{
                 opacity: 1;
-                transition: 0.5s linear;
+                transition: 0.3s linear;
             }
         }
     }
