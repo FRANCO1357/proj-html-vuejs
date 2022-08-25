@@ -36,7 +36,10 @@ export default{
 
 <style lang="scss" scoped>
 @import "../assets/sass/vars";
-.container{
+.jumbotron{
+    padding-top: 80px;
+
+    .container{
 
     a{
         text-decoration: none;
@@ -133,4 +136,7 @@ export default{
         }        
     }
 }
+    
+}
+
 </style>

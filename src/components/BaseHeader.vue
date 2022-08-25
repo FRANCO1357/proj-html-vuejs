@@ -35,6 +35,10 @@
     header{
         background-color: white;
         box-shadow: 0 0.2px 8px rgb(218, 218, 218);
+        position: fixed;
+        left: 0;
+        right: 0;
+        z-index: 1;
 
         .container{
             display: flex;
@@ -88,6 +92,7 @@
                                 margin: 5px 0;
                                 color: $text_color;
                                 font-weight: 200;
+                                cursor: pointer;
 
                                 &:hover{
                                     color: black;
