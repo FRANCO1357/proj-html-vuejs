@@ -8,7 +8,7 @@
                     <h4>{{testimonial.title}}</h4>
                     <p>{{testimonial.text}}</p>
                     <div class="testimonial-info">
-                        <img :src="testimonial.thumb" alt="">
+                        <img :src="testimonial.thumb" :alt="testimonial.name">
                         <div class="text">
                             <p>{{testimonial.name}}</p>
                             <p>{{testimonial.position}}</p>

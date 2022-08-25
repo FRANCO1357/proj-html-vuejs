@@ -4,14 +4,14 @@
             <div class="most-viewed">
                 <p>ENJOYABLE INSIGHTS</p>
                 <h3>Most Viewed <span>Best Blogs</span></h3>
-                <a href=""><i class="fa-solid fa-arrow-right-long"></i> Become a Better Blogger: Content Planning</a>
-                <a href=""><i class="fa-solid fa-arrow-right-long"></i> Promoting Your Online Business on Pinterest</a>
-                <a href=""><i class="fa-solid fa-arrow-right-long"></i> Gamification and Game-Based Learning</a>
-                <a href=""><i class="fa-solid fa-arrow-right-long"></i> Designing an Online Course from Expert’s Perspective</a>
-                <a href=""><i class="fa-solid fa-arrow-right-long"></i> Why Online Courses Are the Future of Education</a>
+                <a href="#"><i class="fa-solid fa-arrow-right-long"></i> Become a Better Blogger: Content Planning</a>
+                <a href="#"><i class="fa-solid fa-arrow-right-long"></i> Promoting Your Online Business on Pinterest</a>
+                <a href="#"><i class="fa-solid fa-arrow-right-long"></i> Gamification and Game-Based Learning</a>
+                <a href="#"><i class="fa-solid fa-arrow-right-long"></i> Designing an Online Course from Expert’s Perspective</a>
+                <a href="#"><i class="fa-solid fa-arrow-right-long"></i> Why Online Courses Are the Future of Education</a>
             </div>
             <div v-for="article in articles" :key="article.title" class="blog-articles-card">
-        <img :src="article.thumb" alt="">
+        <img :src="article.thumb" :alt="article.title">
         <div class="description">
             <p>{{article.topic}}</p>
             <h4>{{article.title}}</h4>

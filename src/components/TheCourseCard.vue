@@ -2,7 +2,7 @@
     <div class="courses">
         <div v-for="course in courses" :key="course.id" class="course-card">
             <div class="thumb">
-                <img :src="course.thumb" alt="">
+                <img :src="course.thumb" :alt="course.title">
             </div>
             <div class="description">
                 <h4>{{course.price}}</h4>
@@ -34,6 +34,7 @@ export default{
     width: 100%;
 
     .course-card{
+        cursor: pointer;
         width: 50%;
         height: 202px;
         text-align: left;

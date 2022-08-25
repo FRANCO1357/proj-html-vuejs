@@ -5,17 +5,17 @@
                 <div class="description">
                     <h2>Distant learning for further expansion</h2>
                     <p>Learning is a life-long journey that in fact we never find the terminate stop. Stop searching, enjoy the process.</p>
-                    <a class="button" href=""><i class="fa-solid fa-download"></i> Download free guide</a>
+                    <a class="button" href="#"><i class="fa-solid fa-download"></i> Download free guide</a>
                     <div class="sample">
                         <p>Have questions?</p><a href="">Get free semple <i class="fa-solid fa-arrow-right-long"></i></a>
                     </div>
                 </div>
                 <figure>
-                    <img src="../assets/images/about-me-profile-ohm4dxoearqbxny7q3bq1pzbdgofdx0tobbeqcvzd0.jpg" alt="">
-                    <img class="background-image first" src="../assets/images/maxcoach-shape-08.png" alt="">
-                    <img class="background-image second" src="../assets/images/maxcoach-shape-08.png" alt="">
-                    <img class="background-image third" src="../assets/images/maxcoach-shape-07.png" alt="">
-                    <img class="background-image fourth" src="../assets/images/maxcoach-shape-02.png" alt="">
+                    <img src="../assets/images/about-me-profile-ohm4dxoearqbxny7q3bq1pzbdgofdx0tobbeqcvzd0.jpg" alt="main-jumbotron-image">
+                    <img class="background-image first" src="../assets/images/maxcoach-shape-08.png" alt="background-image-first">
+                    <img class="background-image second" src="../assets/images/maxcoach-shape-08.png" alt="background-image-second">
+                    <img class="background-image third" src="../assets/images/maxcoach-shape-07.png" alt="background-image-third">
+                    <img class="background-image fourth" src="../assets/images/maxcoach-shape-02.png" alt="background-image-fourth">
                 </figure>
             </div>
             <TheJumbotronCard :icons="icons"/>

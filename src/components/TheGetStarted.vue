@@ -5,9 +5,9 @@
             <h3>You can be your own guiding star with our help!</h3>
             <a href="#">Get started now</a>
         </div>
-        <img class="background-image first" src="../assets/images/maxcoach-shape-02.png" alt="">
-        <img class="background-image second" src="../assets/images/maxcoach-circle.png" alt="">
-        <img class="background-image third" src="../assets/images/maxcoach-shape-01.png" alt="">
+        <img class="background-image first" src="../assets/images/maxcoach-shape-02.png" alt="background-image-first">
+        <img class="background-image second" src="../assets/images/maxcoach-circle.png" alt="background-image-second">
+        <img class="background-image third" src="../assets/images/maxcoach-shape-01.png" alt="background-image-thirde">
     </div>
 </template>
 

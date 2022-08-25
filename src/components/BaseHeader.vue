@@ -7,7 +7,7 @@
                     <li v-for="link in links" :key="link.text">
                         <a :href="link.href">{{link.text}}<i class="fa-solid fa-angle-down"></i></a>
                         <div class="sub-menu">
-                            <a v-for="link in link.link" :key="link.text" href="#">{{link}}</a>
+                            <a v-for="link in link.link" :key="link.text" :href="link.href">{{link}}</a>
                         </div>
                     </li>
                 </ul>

@@ -2,10 +2,10 @@
     <div class="tutorial">
         <div class="container">
             <div class="video-tutorial">
-                <img src="../assets/images/icon-youtube-play.png" alt="">
-                <img class="background-image first" src="../assets/images/maxcoach-shape-05-150x150.png" alt="">
-                <img class="background-image second" src="../assets/images/maxcoach-shape-07.png" alt="">
-                <img class="background-image third" src="../assets/images/maxcoach-shape-02.png" alt="">
+                <img src="../assets/images/icon-youtube-play.png" alt="video-tutorial">
+                <img class="background-image first" src="../assets/images/maxcoach-shape-05-150x150.png" alt="background-image-first">
+                <img class="background-image second" src="../assets/images/maxcoach-shape-07.png" alt="background-image-second">
+                <img class="background-image third" src="../assets/images/maxcoach-shape-02.png" alt="background-image-third">
             </div>
             <div class="description">
                 <p>GET STARTED <strong>EFFORTLESSLY</strong></p>

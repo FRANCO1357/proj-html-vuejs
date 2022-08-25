@@ -5,11 +5,11 @@
             <p>Enter your email address to register to our newsletter subscription delivered on a regular basis!</p>
             <div class="form-field">
                 <input type="email" placeholder="Enter your email">
-                <a href="">Subscribe</a>
+                <a href="#">Subscribe</a>
             </div>
-            <img class="background-image first" src="../assets/images/maxcoach-shape-02.png" alt="">
-            <img class="background-image second" src="../assets/images/maxcoach-circle-green.png" alt="">
-            <img class="background-image third" src="../assets/images/maxcoach-shape-09.png" alt="">
+            <img class="background-image first" src="../assets/images/maxcoach-shape-02.png" alt="background-image-first">
+            <img class="background-image second" src="../assets/images/maxcoach-circle-green.png" alt="background-image-second">
+            <img class="background-image third" src="../assets/images/maxcoach-shape-09.png" alt="background-image-third">
         </div>
     </div>
 </template>

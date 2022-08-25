@@ -1,7 +1,7 @@
 <template>
     <div class="all-benefits">
         <div v-for="benefit in benefits" :key="benefit.title" class="benefits-card">
-            <img :src="benefit.thumb" alt="">
+            <img :src="benefit.thumb" :alt="benefit.title">
             <h5>{{benefit.title}}</h5>
             <p>{{benefit.description}}</p>
             <a href="#">{{benefit.link}} <i class="fa-solid fa-arrow-right-long"></i></a>
