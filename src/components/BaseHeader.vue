@@ -11,7 +11,10 @@
                         </div>
                     </li>
                 </ul>
-                <input type="text" placeholder="Search...">
+                <div class="search-field">
+                    <input type="text" placeholder="Search...">
+                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                </div>
             </nav>
         </div>
     </header>
@@ -98,25 +101,48 @@
                     }       
                 }
 
-                input{
-                    margin-left: 20px;
-                    height: 30px;
-                    padding: 20px 15px;
-                    border: none;
-                    border-radius: 5px;
-                    background-color: rgb(233, 233, 233);
+                .search-field{
+                    display: flex;
 
-                    &::placeholder{
-                        color: grey;
-                        font-size: 14px;
-                        font-weight: 100;
+                    input{
+                        margin-left: 20px;
+                        height: 30px;
+                        padding: 20px 15px;
+                        border: none;
+                        border-radius: 5px 0 0 5px;
+                        background-color: rgb(233, 233, 233);
+
+                        &::placeholder{
+                            color: grey;
+                            font-size: 14px;
+                            font-weight: 100;
+                        }
+
+                        &:focus-visible{
+                            background-color: white;
+                            border: 0.5px solid green;
+                            font-weight: 100;
+                        }
                     }
 
-                    &:focus-visible{
-                        background-color: white;
-                        border: 0.5px solid green;
-                        font-weight: 100;
+                    a{
+                        display: inline-block;
+                        color: green;
+                        text-decoration: none;
+                        background-color: rgb(233, 233, 233);
+                        width: 50px;
+                        height: 40px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 0 5px 5px 0;
+
+                        &:hover{
+                            background-color: green;
+                            color: white;
+                        }
                     }
+
                 }
             }
         }
