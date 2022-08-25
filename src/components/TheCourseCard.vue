@@ -26,6 +26,7 @@ export default{
 </script>
 
 <style lang="scss" scoped>
+@import "../assets/sass/vars";
 .courses{
     margin-top: 40px;
     display: flex;
@@ -67,7 +68,7 @@ export default{
             margin: 30px;
 
             h4{
-                color: green;
+                color: $main_color;
                 font-size: 24px;
             }
 
@@ -75,6 +76,7 @@ export default{
                 font-size: 20px;
                 font-weight: 500;
                 margin-bottom: 10px;
+                color: $title_color;
             }
         }
 
@@ -83,7 +85,7 @@ export default{
             
             p{
                 margin-right: 50px;
-                color: grey;
+                color: $title_text;
                 font-size: 14px;
                 font-weight: 100;
             }

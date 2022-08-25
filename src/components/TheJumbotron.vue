@@ -35,11 +35,12 @@ export default{
 </script>
 
 <style lang="scss" scoped>
+@import "../assets/sass/vars";
 .container{
 
     a{
         text-decoration: none;
-        color: green;
+        color: $main_color;
     }
 
     .jumbotron-top{
@@ -51,24 +52,29 @@ export default{
             padding-right: 50px;
 
             h2{
+                color: $title_color;
                 font-size: 40px;
                 font-weight: 600;
                 margin: 10px 0;
             }
 
             p{
-                color: gray;
+                color: $title_text;
             }
 
             .button{
                 display: inline-block;
-                background-color: green;
+                background-color: $main_color;
                 border-radius: 5px;
                 padding: 15px 50px;
                 margin: 15px 0;
                 color: white;
                 font-size: 12px;
                 font-weight: 500;
+
+                &:hover{
+                    background-color: $button_hover;
+                }
             }
 
             .sample{

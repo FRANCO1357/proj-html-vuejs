@@ -20,6 +20,7 @@ export default{
 </script>
 
 <style lang="scss" scoped>
+@import "../assets/sass/vars";
 .container{
     display: flex;
     padding: 0 20px;
@@ -28,13 +29,14 @@ export default{
         width: 25%;
         text-align: center;
         padding: 80px 20px;
-        border-left: 1px solid rgb(234, 234, 234);
+        border-left: 1px solid $dark_background;
 
         &:last-child{
-           border-right: 1px solid rgb(234, 234, 234); 
+           border-right: 1px solid $dark_background; 
         }
 
         h4{
+            color: $title_color;
             font-size: 22px;
             font-weight: 600;
             padding: 0 40px;
@@ -43,13 +45,13 @@ export default{
 
         strong{
             font-size: 60px;
-            color: green;
+            color: $main_color;
         }
 
         h5{
             font-size: 18px;
             font-weight: 500;
-            color: grey;
+            color: $title_text;
             margin-bottom: 20px;
         }
     }

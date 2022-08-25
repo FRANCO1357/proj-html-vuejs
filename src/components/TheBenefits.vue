@@ -22,22 +22,24 @@ export default{
 </script>
 
 <style lang="scss" scoped>
+@import "../assets/sass/vars";
 .benefits{
     text-align: center;
 
     p{
-        color: grey;
+        color: $text_color;
         font-weight: 200;
         margin-top: 50px;
     }
 
     h3{
+        color: $title_color;
         font-size: 30px;
         font-weight: 600;
 
         span{
             font-weight: 300;
-            color: green;
+            color: $main_color;
         }
     }
 }

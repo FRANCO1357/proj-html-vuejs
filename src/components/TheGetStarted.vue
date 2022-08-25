@@ -18,29 +18,32 @@ export default{
 </script>
 
 <style lang="scss" scoped>
+@import "../assets/sass/vars";
 .get-started{
-    background-color: rgb(234, 234, 234);
+    background-color: $light_background;
     text-align: center;
     position: relative;
 
     h4{
+        color: $title_color;
         font-size: 22px;
         font-weight: 600;
 
         span{
-            color: green;
+            color: $main_color;
             font-weight: 300;
         }
     }
 
     h3{
+        color: $title_color;
         font-size: 32px;
         font-weight: 600;
     }
 
     a{
         display: inline-block;
-        background-color: green;
+        background-color: $main_color;
         border-radius: 5px;
         padding: 15px 60px;
         margin: 50px 0;

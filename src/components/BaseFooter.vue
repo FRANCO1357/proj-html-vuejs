@@ -33,9 +33,10 @@ export default{
 </script>
 
 <style lang="scss" scoped>
+@import "../assets/sass/vars";
 footer{
-    background-color: rgb(231, 231, 231);
-    color: grey;
+    background-color: $light_background;
+    color: $text_color;
     font-weight: 200;
     font-size: 14px;
     padding: 50px;
@@ -43,11 +44,11 @@ footer{
     a{
         display: inline-block;
         text-decoration: none;
-        color: grey;
+        color: $text_color;
         margin-bottom: 10px;
 
         &:hover{
-            color: green;
+            color: $main_color;
             transition: 0.5s linear;
             }
         }
@@ -80,7 +81,7 @@ footer{
                 margin-right: 30px;
                 
                 &:hover{
-                    color: green;
+                    color: $main_color;
                     transition: 0.5s linear;
                 }
             }

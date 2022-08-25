@@ -21,6 +21,7 @@ export default{
 </script>
 
 <style lang="scss" scoped>
+@import "../assets/sass/vars";
 nav{
     display: flex;
     width: 50%;
@@ -43,7 +44,7 @@ nav{
         margin-bottom: 10px;
 
         &:hover{
-            color: green;
+            color: $main_color;
             transition: 0.5s linear;
             }
         }

@@ -16,6 +16,7 @@ export default{
 </script>
 
 <style lang="scss" scoped>
+@import "../assets/sass/vars";
     .jumbotron-bottom{
         display: flex;
         justify-content: space-between;

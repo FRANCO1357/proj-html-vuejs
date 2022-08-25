@@ -19,6 +19,7 @@ export default{
 </script>
 
 <style lang="scss" scoped>
+@import "../assets/sass/vars";
 .all-benefits{
     display: flex;
     margin: 50px 0;
@@ -28,13 +29,14 @@ export default{
         padding-right: 40px;
 
         h5{
+            color: $title_color;
             font-size: 22px;
             font-weight: 500;
             margin: 15px 0;
         }
 
         p{
-            color: grey;
+            color: $text_color;
             font-size: 14px;
             font-weight: 200;
             margin-bottom: 15px;
@@ -42,7 +44,7 @@ export default{
 
         a{
             font-size: 14px;
-            color: grey;
+            color: $text_color;
             text-decoration: none;
             font-weight: 500;
         }

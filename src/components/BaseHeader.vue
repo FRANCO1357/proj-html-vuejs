@@ -1,7 +1,7 @@
 <template>
     <header>
         <div class="container">
-            <a href=""><img src="../assets/images/dark-logo.png" alt=""></a>
+            <a href=""><img src="../assets/images/dark-logo.png" alt="logo"></a>
             <nav>
                 <ul>
                     <li v-for="link in links" :key="link.text">
@@ -30,6 +30,8 @@
 </script>
 
 <style lang="scss" scoped>
+@import "../assets/sass/vars";
+
     header{
         background-color: white;
         box-shadow: 0 0.2px 8px rgb(218, 218, 218);
@@ -42,6 +44,11 @@
 
             a{
                 width: 150px;
+                color: black;
+
+                &:hover{
+                    color: $main_color;
+                }
             }
 
             nav{
@@ -73,13 +80,13 @@
                             min-height: 10px;
                             background-color: white;
                             box-shadow: 0 1px 6px rgb(216, 216, 216);
-                            border-bottom: 4px solid green;
+                            border-bottom: 4px solid $main_color;
                             display: none;
                             padding: 20px;
 
                             a{
                                 margin: 5px 0;
-                                color: grey;
+                                color: $text_color;
                                 font-weight: 200;
 
                                 &:hover{
@@ -120,14 +127,14 @@
 
                         &:focus-visible{
                             background-color: white;
-                            border: 0.5px solid green;
+                            border: 0.5px solid $main_color;
                             font-weight: 100;
                         }
                     }
 
                     a{
                         display: inline-block;
-                        color: green;
+                        color: $main_color;
                         text-decoration: none;
                         background-color: rgb(233, 233, 233);
                         width: 50px;
@@ -138,7 +145,7 @@
                         border-radius: 0 5px 5px 0;
 
                         &:hover{
-                            background-color: green;
+                            background-color: $main_color;
                             color: white;
                         }
                     }

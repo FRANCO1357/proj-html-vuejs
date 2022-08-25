@@ -36,8 +36,9 @@ export default{
 </script>
     
 <style lang="scss" scoped>
+@import "../assets/sass/vars";
 .blogs-articles{
-    background-color: rgb(234, 234, 234);
+    background-color: $dark_background;
 
     .container{
         display: flex;
@@ -51,30 +52,36 @@ export default{
             margin: 20px;
 
             p{
-                color: grey;
+                color: $title_text;
             }
 
             h3{
+                color: $title_color;
                 font-size: 32px;
                 font-weight: 600;
                 margin: 20px 0;
 
                 span{
                     font-weight: 400;
-                    color: green;
+                    color: $main_color;
                 }
             }
 
             a{
-                color: black;
+                color: $title_color;
                 text-decoration: none;
                 font-size: 14px;
                 font-weight: 500;
                 margin: 10px 0;
+
+                &:hover{
+                    color: $main_color;
+                }
             }
         }
 
         .blog-articles-card{
+            cursor: pointer;
             background-color: white;
             width: 30%;
             margin: 25px;
@@ -89,11 +96,16 @@ export default{
                 padding: 20px;
 
                 p{
-                    color: grey;
+                    color: $text_color;
                 }
 
                 h4{
+                    color: $title_color;
                     margin: 10px 0;
+
+                    &:hover{
+                        color: $main_color;
+                    }
                 }
 
                 .info{
@@ -103,6 +115,11 @@ export default{
                 p{
                     margin-right: 30px;
                     font-size: 14px;
+                    font-weight: 200;
+
+                    i{
+                        margin-right: 5px;
+                    }
                 }
             }
             }

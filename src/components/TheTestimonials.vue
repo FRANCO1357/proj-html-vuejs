@@ -33,45 +33,57 @@ export default{
 </script>
 
 <style lang="scss" scoped>
+@import "../assets/sass/vars";
 .testimonials{
-    background-color: rgb(234, 234, 234);
+    background-color: $light_background;
     text-align: center;
 
+    .container{
+        width: 1400px;
+        margin: 0 auto;
+        overflow: hidden;
 
-    p{
-        color: grey;
+        p{
+        color: $text_color;
         font-weight: 200;
         margin-top: 50px;
     }
 
     h3{
+        color: $title_color;
         font-size: 30px;
         font-weight: 600;
 
         span{
             font-weight: 300;
-            color: green;
+            color: $main_color;
         }
     }
 
     .testimonials-list{
-        display: flex;
+        white-space: nowrap;
         margin-top: 50px;
 
         .testimonial-card{
+            display: inline-block;
+            max-width: 400px;
+            min-height: 200px;
             background-color: white;
-            margin: 10px;
-            padding: 30px;
+            margin: 20px 30px;
+            padding: 40px;
             border-radius: 5px;
+            word-break: break-all;
+            white-space: pre-wrap;
 
             h4{
+                color: $title_color;
                 font-weight: 600;
-                font-size: 14px;
+                font-size: 18px;
             }
 
             p{
                 margin-top: 15px;
-                font-size: 12px;
+                font-size: 14px;
             }
 
             .testimonial-info{
@@ -103,5 +115,7 @@ export default{
             margin: 50px 10px;
         }
     }
+    }
+    
 }
 </style>

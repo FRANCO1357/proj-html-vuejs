@@ -21,23 +21,25 @@ export default{
 </script>
 
 <style lang="scss" scoped>
+@import "../assets/sass/vars";
 .subscription{
     text-align: center;
     padding: 50px;
     position: relative;
 
     h3{
+        color: $title_color;
         font-size: 32px;
         font-weight: 600;
 
         span{
             font-weight: 400;
-            color: green;
+            color: $main_color;
         }
     }
 
     p{
-        color: grey;
+        color: $text_color;
         width: 600px;
         margin: 20px auto;
     }
@@ -53,7 +55,7 @@ export default{
             padding: 20px 15px;
             border: none;
             border-radius: 5px 0 0 5px;
-            background-color: rgb(233, 233, 233);
+            background-color: $light_background;
 
             &::placeholder{
                 color: grey;
@@ -63,14 +65,14 @@ export default{
 
             &:focus-visible{
                 background-color: white;
-                border: 0.5px solid green;
+                border: 0.5px solid $main_color;
                 font-weight: 100;
             }
         }
 
         a{
             display: inline-block;
-            background-color: green;
+            background-color: $main_color;
             height: 50px;
             width: 120px;
             text-decoration: none;
@@ -80,6 +82,10 @@ export default{
             align-items: center;
             border-radius: 0 5px 5px 0;
             font-size: 14px;
+
+            &:hover{
+                background-color: $button_hover;
+            }
         }
     }
 

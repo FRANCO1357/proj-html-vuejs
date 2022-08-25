@@ -23,8 +23,9 @@ export default{
 </script>
 
 <style lang="scss" scoped>
+@import "../assets/sass/vars";
 .all-courses{
-    background-color: rgb(232, 232, 232);
+    background-color: $light_background;
     text-align: center;
     padding: 50px 0;
 
@@ -40,14 +41,17 @@ export default{
     
     a{
         display: inline-block;
-        text-decoration: none;
-        background-color: green;
+        background-color: $main_color;
         border-radius: 5px;
         padding: 15px 60px;
         margin: 15px 0;
         color: white;
         font-size: 14px;
         font-weight: 500;
+
+        &:hover{
+            background-color: $button_hover;
+        }
     }
 }
 </style>

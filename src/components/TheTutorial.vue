@@ -24,6 +24,7 @@ export default{
 </script>
 
 <style lang="scss" scoped>
+@import "../assets/sass/vars";
 .container{
     display: flex;
     padding: 100px 0;
@@ -75,25 +76,30 @@ export default{
         padding: 40px 0 80px 80px;
 
         h3{
+            color: $title_color;
             font-size: 42px;
             font-weight: 600;
             margin: 20px 0;
 
             span{
                 font-weight: 300;
-                color: green;
+                color: $main_color;
             }
         }
 
         p{
-            color: grey;
+            color: $text_color;
             font-size: 18px;
             font-weight: 200;
+
+            strong{
+                color: $title_color;
+            }
         }
 
         a{
             display: block;
-            color: green;
+            color: $main_color;
             font-weight: 500;
             font-size: 14px;
             margin-top: 30px;

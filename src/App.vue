@@ -20,7 +20,7 @@ export default {
     BaseHeader,
     BaseMain,
     TheJumbotron,
-    BaseFooter
+    BaseFooter,
 },
   data(){
     return{
@@ -38,34 +38,5 @@ export default {
 </script>
 
 <style lang="scss" >
-  *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
-    body{
-      font-family: 'Poppins', sans-serif;    
-
-          ul li{
-      list-style-type: none;
-
-      a{
-        text-decoration: none;
-        color: black;
-      }
-    }
-
-    img{
-      max-width: 100%;
-    }
-
-    .container{
-      width: 1200px;
-      margin: 0 auto;
-      padding: 20px;
-    }
-    }
-
-
-  }
+@import "./assets/sass/style.scss";
 </style>
