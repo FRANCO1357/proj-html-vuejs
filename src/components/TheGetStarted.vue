@@ -51,6 +51,10 @@ export default{
         font-size: 14px;
         font-weight: 500;
         text-decoration: none;
+
+        &:hover{
+            background-color: $button_hover;
+        }
     }
 
     .background-image{
