@@ -3,7 +3,7 @@
     <div v-for="link in footerMenuLinks" :key="link.text" class="footer-menu">
         <h4>{{link.text}}</h4>
         <ul>
-            <li v-for="link in link.link" :key="link.link">
+            <li v-for="link in link.link" :key="link">
                 <a href="#">{{link}}</a>
             </li>
         </ul>
