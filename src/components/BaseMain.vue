@@ -5,8 +5,9 @@
         <TheTutorial/>
         <TheTestimonials :testimonials="testimonials"/>
         <TheGetStarted/>
-        <TheBrandData :brandData="brandData"/>
+        <TheCompanyData :brandData="brandData"/>
         <TheBlogsArticles :articles="blogsArticles"/>
+        <TheSubscription/>
     </div>
 </template>
 
@@ -16,8 +17,9 @@ import TheAllCourses from './TheAllCourses.vue';
 import TheTutorial from './TheTutorial.vue';
 import TheTestimonials from './TheTestimonials.vue';
 import TheGetStarted from './TheGetStarted.vue';
-import TheBrandData from './TheBrandData.vue';
+import TheCompanyData from './TheCompanyData.vue';
 import TheBlogsArticles from './TheBlogsArticles.vue';
+import TheSubscription from './TheSubscription.vue';
     export default{
     name: "baseMain",
     components: {
@@ -26,8 +28,9 @@ import TheBlogsArticles from './TheBlogsArticles.vue';
     TheTutorial,
     TheTestimonials,
     TheGetStarted,
-    TheBrandData,
+    TheCompanyData,
     TheBlogsArticles,
+    TheSubscription,
 },
     props:{
         courses: Array,

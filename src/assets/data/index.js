@@ -5,5 +5,6 @@ import benefitsList from './_benefitsList';
 import testimonialsList from './_testimonialsList';
 import brandData from './_brandData';
 import blogsArticles from './_blogsArticles';
+import footerMenuLinks from './_footerMenuLinks';
 
-export {menuLinks, jumbotronIcons, coursesList, benefitsList, testimonialsList, brandData, blogsArticles}
+export {menuLinks, jumbotronIcons, coursesList, benefitsList, testimonialsList, brandData, blogsArticles, footerMenuLinks}

@@ -1,7 +1,7 @@
 <template>
-    <div class="brand-data">
+    <div class="company-data">
         <div class="container">
-            <div v-for="data in brandData" :key="data.title" class="brand-data-card">
+            <div v-for="data in brandData" :key="data.title" class="company-data-card">
                 <h4>{{data.title}}</h4>
                 <strong>{{data.number}}</strong>
                 <h5>{{data.name}}</h5>
@@ -24,7 +24,7 @@ export default{
     display: flex;
     padding: 0 20px;
 
-    .brand-data-card{
+    .company-data-card{
         width: 25%;
         text-align: center;
         padding: 80px 20px;
@@ -50,6 +50,7 @@ export default{
             font-size: 18px;
             font-weight: 500;
             color: grey;
+            margin-bottom: 20px;
         }
     }
 }
